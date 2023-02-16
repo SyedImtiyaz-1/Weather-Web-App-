@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css" class="rel stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" href="img/cloud.png" type="image/icon type">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <title>Weather.ly</title>
+</head>
+<body>
+  <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <a class="navbar-brand" href="index.html"><img id="logoLy"
+          src="img/weatherly-low-resolution-logo-white-on-black-background.png" alt="weather.ly"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" aria-label="Toggle navigation"
+        aria-controls="navbarSupportedContent" aria-expanded="false" data-mdb-target="#navbarSupportedContent">
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>-->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+
+            <a class="nav-link" aria-current="page" href="#"> Home </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="userguide.html"> User Guide </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- </br></br></br> -->
+  <div class="containerZ">
+    <section id=vh style="background-image: url(img/bg11.png)"></br>
+      <h1 class="delhiDiv">Weather for <span id="cityName"></span></h1>
+    <main>
+      <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+            <div class="col-md-9 col-lg-7 col-xl-5">
+
+            <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+              <div class="card-body p-4">
+
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators mb-0">
+                    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo1" data-slide-to="1"></li>
+                    <li data-target="#demo1" data-slide-to="2"></li>
+                  </ul>
+                  <!-- Carousel inner -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex justify-content-between mb-4 pb-2">
+                        <div>
+                          <h2 class="display-2"><strong><span id="temp"></span></strong>°C</h2>
+                          <p class="text-muted mb-0"><span id="city"></span></p>
+                        </div>
+                        <div>
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
+                            width="150px">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card mb-4" style="border-radius: 25px;">
+              <div class="card-body p-4">
+
+                <div id="demo2" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators mb-0">
+                    <li data-target="#demo2" data-slide-to="0"></li>
+                    <li data-target="#demo2" data-slide-to="1" class="active"></li>
+                    <li data-target="#demo2" data-slide-to="2"></li>
+                  </ul>
+                  <!-- Carousel inner -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <p class="small"> <strong>Humidity Info</br> <i class='bi bi-moisture'></i> <span
+                            id="humidity"></span></p></strong>
+                      <!-- <i class='bi bi-moisture'></i><small> 20 </small> -->
+                    </div>
+
+                    <div class="carousel-wind">
+                      <p class="small"><strong>Wind Info</br> <i class="bi bi-wind"> </i> <span
+                            id="wind_degrees"></span></p></strong>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+       
+          <form class="d-flex" role="search">
+            <input id="city" class="form-control me-2" type="search" placeholder="Search Your City Here"
+              aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" id="submit"> Search </button>
+          </form>
+          
+      </div>
+      </main>
+    </section>
+  </div>
+  </div>
+  </div>
+  <div class="marQ">
+  <marquee width="100%" direction="left" height="50%">
+    <u>Note</u>: Its a weather app but you have to enter your own api key if you want to see my <b>POV</b> you can check at my
+    GitHub Repository, Thankyou for Forking!
+  </marquee>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
