@@ -1,0 +1,68 @@
+html{
+    background-color: rgb(22, 22, 21);;
+}
+*{
+    margin: 0;
+}
+
+
+.delhiDiv {
+    text-align: center;
+    color: white;
+    text-shadow: #000 2px;
+
+    
+}
+
+.carousel-item {
+    padding-right: 300px;
+}
+
+.carousel-wind {
+    text-align: right;
+}
+
+
+
+#logoLy {
+    height: 70px;
+   
+}
+
+
+.navbar {
+    background-color: rgb(22, 22, 21);
+}
+
+marquee {
+    margin-top: 10px;
+    background-color: rgb(18, 28, 86);
+    color: white;
+}
+
+
+.navbar-toggler {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-toggler-icon {
+    margin-left: 199px;
+    color: #ffffff;
+    background: white;
+
+}
+
+a.nav-link {
+    color: white;
+    
+    
+}
+
+.container-fluid {
+    background-color: rgb(22, 22, 21);
+    /* background: black; */
+}
+
+.marQ{
+    background-color: rgb(22, 22, 21);
+}
